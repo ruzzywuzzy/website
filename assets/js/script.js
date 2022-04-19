@@ -75,12 +75,12 @@ function dropDown() {
 }
 
 //Video volume
-document.getElementById("vid").volume = 0.5;
+document.getElementById("thrax").volume = 0.5;
 
 
 //Main Function
 mainActive = false;
-setTimeout(() => {if (document.getElementById("vid").paused) {$("#clickToPlay").css("opacity", "1");} else {main()}}, 1000);
+setTimeout(() => {if (document.getElementById("thrax").paused) {$("#clickToPlay").css("opacity", "1");} else {main()}}, 1000);
 function main() {
     if (mainActive) return;
     mainActive = true;
@@ -91,7 +91,7 @@ function main() {
     setTimeout(() => {
         $("#clickToPlay").css("display", "none");
     }, 1050);
-    document.getElementById("vid").play();
+    document.getElementById("thrax").play();
 
     //Border
     borderTop = 0;
